@@ -33,8 +33,6 @@ async function getImageOfTheDay(inputDate) {
         const response = await fetch(URL);
         const result = await response.json();
         addDataOnUI(result);
-        saveSearch(inputDate);
-        addSearchToHistory();
     }
     catch (err) {
         alert('Something Went Wrong');
@@ -100,4 +98,6 @@ function addDataOnUI(dataObject) {
             </div>
     `;
     currentImageContainer.innerHTML = data;
+    saveSearch(inputDate);
+    addSearchToHistory();
 }
