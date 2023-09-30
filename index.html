@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Picture of the Day</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <h1>NASA Picture Of The Day</h1>
+    <section id="search-field">
+        <form method="get" id="search-form">
+            <h2>Search Day For <strong>A Picture Of The Day</strong></h2>
+            <input type="date" name="dateInput" id="search-input" required />
+            <button type="submit" name="submit" id="submit"><span class="material-symbols-outlined" id="searchIcon">
+                    search
+                </span></button>
+        </form>
+        <h2 id="showSearchesBtn">Previous Searches</h2>
+    </section>
+    <ul id="search-history" style="display: none;" class="search-history">
+    </ul>
+    <div class="container">
+        <section id="current-image-container"></section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
